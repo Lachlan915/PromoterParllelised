@@ -3,8 +3,9 @@ The Promoter program is a bioinformatics tool that uses the Smith-Waterman-Gotoh
 
 ## Full Parallelised
 In this parallelized version of the Promoter program, two main files have been modified:
-  <br/><br/>**- SmithWatermanGotoh.java**
-  <br/>**- Sequential.java**
+
+  - **SmithWatermanGotoh.java**
+  - **Sequential.java**
 
 ### Parallelisation Overview
   1. **SmithWatermanGotoh Algorithm:** The scoring matrix computation has been parallelized to improve efficiency. A threshold of 1500 is used to determine when to split a task for parallel execution. This optimization helps distribute workload across multiple threads, using available CPU cores.
