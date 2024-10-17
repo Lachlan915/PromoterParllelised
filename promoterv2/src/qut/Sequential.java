@@ -123,8 +123,17 @@ public class Sequential
            System.out.println(entry.getKey() + " " + entry.getValue());
     }
 
-    public static void main(String[] args) throws FileNotFoundException, IOException
-    {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        // Record the start time
+        long startTime = System.nanoTime();
+
         run("referenceGenes.list", "Ecoli");
+
+        // Record the end time
+        long endTime = System.nanoTime();
+        // Calculate the elapsed time in seconds
+        double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
+
+        System.out.printf("Computation time: %.2f seconds%n", elapsedTimeInSeconds);
     }
 }
