@@ -4,6 +4,6 @@ The Promoter program is a bioinformatics tool that uses the Smith-Waterman-Gotoh
 ## Hybrid / Most Optimal Version
 In this optimised branch, the following changes were made:
 
-  <br/>- **Sequential.java** was modified to introduce the GeneProcessor class for efficient parallel gene processing.
-  <br/>- The original **SmithWatermanGotoh** algorithm was retained, as it provided better performance without parallelisation overhead.
+  - **Sequential.java** was modified to introduce the GeneProcessor class for efficient parallel gene processing.
+  - The original **SmithWatermanGotoh** algorithm was retained, as it provided better performance without parallelisation overhead.
 
